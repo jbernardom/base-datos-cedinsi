@@ -1,0 +1,156 @@
+mysql> CREATE DATABASE Mi_cerveza;
+Query OK, 1 row affected (0.02 sec)
+
+mysql> USE Mi_cerveza;
+Database changed
+
+mysql> CREATE TABLE categoria (
+    -> idcategoria INT PRIMARY KEY AUTO_INCREMENT,
+    -> nombre varchar (255) NOT NULL,
+    -> detalle varchar (255) NOT NULL
+    -> );
+Query OK, 0 rows affected (0.16 sec)
+
+mysql> CREATE TABLE cerveza (
+    -> idcerveza INT PRIMARY KEY AUTO_INCREMENT,
+    -> nombre varchar (255) NOT NULL,
+    -> detalle varchar (255) NOT NULL
+    -> );
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> CREATE TABLE tipo (
+    -> idtipo INT PRIMARY KEY AUTO_INCREMENT,
+    -> nombre varchar (255) NOT NULL
+    -> );
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> CREATE TABLE materiaprima (
+    -> idmateriaprima INT PRIMARY KEY AUTO_INCREMENT,
+    -> nombre varchar (255) NOT NULL,
+    -> detalle varchar (255) NOT NULL
+    -> );
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> ALTER TABLE cerveza ADD COLUMN idcategoria INT;
+Query OK, 0 rows affected (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE cerveza ADD FOREIGN KEY (idcategoria)  REFERENCES categoria (idcategoria);
+Query OK, 0 rows affected (0.12 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> CREATE TABLE tipo_categoria (
+    -> idtipo_categoria INT PRIMARY KEY AUTO_INCREMENT
+    -> );
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> ALTER TABLE tipo_categoria ADD COLUMN idtipo INT;
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE tipo_categoria ADD FOREIGN KEY (idtipo) REFERENCES tipo (idtipo);
+Query OK, 0 rows affected (0.03 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE tipo_categoria ADD COLUMN idcategoria INT;
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE tipo_categoria ADD FOREIGN KEY (idcategoria) REFERENCES categoria (idcategoria);
+Query OK, 0 rows affected (0.03 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> CREATE TABLE cerveza_materiaprima (
+    -> idcerveza_materiaprima INT PRIMARY KEY AUTO_INCREMENT,
+    -> cantidad varchar (255) NOT NULL,
+    -> unidad varchar (255) NOT NULL
+    -> );
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> ALTER TABLE cerveza_materiaprima ADD COLUMN idcerveza INT;
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE cerveza_materiaprima ADD FOREIGN KEY (idcerveza) REFERENCES cerveza (idcerveza);
+Query OK, 0 rows affected (0.03 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE cerveza_materiaprima ADD COLUMN idmateriaprima INT;
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE cerveza_materiaprima ADD FOREIGN KEY (idmateriaprima) REFERENCES materiaprima (idmateriaprima);
+Query OK, 0 rows affected (0.03 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+
+INSERTAR DATOS
+
+
+mysql> INSERT INTO categoria (idcategoria, nombre, detalle)
+    -> VALUES (1, "lagers", "");
+Query OK, 1 row affected (0.02 sec)
+
+mysql> INSERT INTO categoria (idcategoria, nombre, detalle)
+    -> VALUES (2, "ales", "");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO tipo (idtipo, nombre)
+    -> VALUES (1, "dark");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO tipo (idtipo, nombre)
+    -> VALUES (2, "pales");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO tipo (idtipo, nombre)
+    -> VALUES (3, "bocks");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO tipo (idtipo, nombre)
+    -> VALUES (4, "stouts");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO tipo (idtipo, nombre)
+    -> VALUES (5, "porters");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO tipo (idtipo, nombre)
+    -> VALUES (6, "belgians");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO tipo (idtipo, nombre)
+    -> VALUES (7, "sours");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO materiaprima (idmateriaprima, nombre, detalle)
+    -> VALUES (1, "malta", "");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> INSERT INTO materiaprima (idmateriaprima, nombre, detalle)
+    -> VALUES (2, "lupulo", "");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO materiaprima (idmateriaprima, nombre, detalle)
+    -> VALUES (3, "levadura", "");
+Query OK, 1 row affected (0.02 sec)
+
+mysql> INSERT INTO materiaprima (idmateriaprima, nombre, detalle)
+    -> VALUES (4, "agua", "");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO materiaprima (idmateriaprima, nombre, detalle)
+    -> VALUES (5, "colorantes", "");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO cerveza (idcerveza, nombre, detalle)
+    -> VALUES (1, "porter_especial", "extraseca");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO cerveza (idcerveza, nombre, detalle)
+    -> VALUES (2, "lager_bock", "seca");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO cerveza (idcerveza, nombre, detalle)
+    -> VALUES (3, "stout_imperial", "extraseca");
+Query OK, 1 row affected (0.00 sec)
