@@ -1,0 +1,20 @@
+[{
+  "_id": {
+    "$oid": "64ffb85441215867fb8ff062"
+  },
+  "id_tipo_cerveza": "1",
+  "Fecha_de_venta": "2023-09-07",
+  "Cantidad_vendida": 50,
+  "Precio_unitario": 13.4,
+  "Total": 670
+},
+{
+  "_id": {
+    "$oid": "64ffbbf141215867fb8ff071"
+  },
+  "id_tipo_cerveza": "2",
+  "Fecha_de_venta": "2023-09-07",
+  "Cantidad_vendida": 90,
+  "Precio_unitario": 12.5,
+  "Total": 1125
+}]

@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "64f92e46852d0f7ca11bc791"
+  },
+  "id_categoria": "1",
+  "Nombre": "Lager",
+  "Detalle": "Artesanal"
+},
+{
+  "_id": {
+    "$oid": "64f92e46852d0f7ca11bc792"
+  },
+  "id_categoria": "2",
+  "Nombre": "Ales",
+  "Detalle": "Espumosa"
+}]

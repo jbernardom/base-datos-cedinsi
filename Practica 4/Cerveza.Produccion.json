@@ -1,0 +1,54 @@
+[{
+  "_id": {
+    "$oid": "64ffb3f241215867fb8ff05b"
+  },
+  "id_cerveza": "1",
+  "id_tipo_cerveza": "2",
+  "Fecha_de_produccion": "2023-09-07",
+  "Cantidad_producida": 1000,
+  "Materia_prima_utilizada": [
+    {
+      "id_materia_prima": "1",
+      "Cantidad_utilizada_en_Kls": 50
+    },
+    {
+      "id_materia_prima": "2",
+      "Cantidad_utilizada_en_Kls": 30
+    },
+    {
+      "id_materia_prima": "3",
+      "Cantidad_utilizada_en_Kls": 20
+    },
+    {
+      "id_materia_prima": "4",
+      "Cantidad_utilizada_en_Kls": 100
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "64ffb5a541215867fb8ff05f"
+  },
+  "id_cerveza": "3",
+  "id_tipo_cerveza": "1",
+  "Fecha_de_produccion": "2023-09-07",
+  "Cantidad_producida": 500,
+  "Materia_prima_utilizada": [
+    {
+      "id_materia_prima": "1",
+      "Cantidad_utilizada_en_Kls": 25
+    },
+    {
+      "id_materia_prima": "2",
+      "Cantidad_utilizada_en_Kls": 15
+    },
+    {
+      "id_materia_prima": "3",
+      "Cantidad_utilizada_en_Kls": 10
+    },
+    {
+      "id_materia_prima": "4",
+      "Cantidad_utilizada_en_Kls": 50
+    }
+  ]
+}]

@@ -1,0 +1,54 @@
+[{
+  "_id": {
+    "$oid": "64f92bf6852d0f7ca11bc789"
+  },
+  "id_cerveza": "1",
+  "Nombre": "Porter Especial",
+  "Detalle": "Extraseca",
+  "id_categoria": "2"
+},
+{
+  "_id": {
+    "$oid": "64f92bf6852d0f7ca11bc78a"
+  },
+  "id_cerveza": "2",
+  "Nombre": "Lager Bock",
+  "Detalle": "seca",
+  "id_categoria": "1"
+},
+{
+  "_id": {
+    "$oid": "64f92bf6852d0f7ca11bc78b"
+  },
+  "id_cerveza": "3",
+  "Nombre": "Stout Imperial",
+  "Detalle": "Extraseca",
+  "id_categoria": "1"
+},
+{
+  "_id": {
+    "$oid": "64f92bf6852d0f7ca11bc78c"
+  },
+  "id_cerveza": "4",
+  "Nombre": "Ales Adiction",
+  "Detalle": "seca",
+  "id_categoria": "2"
+},
+{
+  "_id": {
+    "$oid": "64f92bf6852d0f7ca11bc78d"
+  },
+  "id_cerveza": "5",
+  "Nombre": "Lager King",
+  "Detalle": "Extraseca",
+  "id_categoria": "1"
+},
+{
+  "_id": {
+    "$oid": "64f92bf6852d0f7ca11bc78e"
+  },
+  "id_cerveza": "6",
+  "Nombre": "Ales King",
+  "Detalle": "Extraseca",
+  "id_categoria": "2"
+}]
