@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "65025bf57b95e90d1299a7a5"
+  },
+  "Cliente": "El Mayorista",
+  "Metodo_de_pago": "Tarjeta de crédito",
+  "id_venta": "1",
+  "id_tipo_cerveza": "2",
+  "Fecha_de_venta": "2023-09-07",
+  "Cantidad_vendida": 90,
+  "Precio_unitario": 12.5,
+  "Total": 1125,
+  "Descuento_aplicado": 5
+},
+{
+  "_id": {
+    "$oid": "65025d837b95e90d1299a7aa"
+  },
+  "Cliente": "Mundo cerveza",
+  "Metodo_de_pago": "Efectivo",
+  "id_venta": "2",
+  "id_tipo_cerveza": "1",
+  "Fecha_de_venta": "2023-09-07",
+  "Cantidad_vendida": 50,
+  "Precio_unitario": 13.4,
+  "Total": 670,
+  "Descuento_aplicado": 10
+}]
